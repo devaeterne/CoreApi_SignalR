@@ -6,7 +6,7 @@ using SignalR.EntityLayer.Entities;
 
 namespace SignalR.DataAccessLayer.Abstract
 {
-    public interface ISocialMedia : IGenericDal<SocialMedia>
+    public interface ISocialMediaDal : IGenericDal<SocialMedia>
     {
 
     }
