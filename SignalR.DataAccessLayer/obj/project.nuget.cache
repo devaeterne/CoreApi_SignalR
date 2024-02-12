@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iFOh6+3OVfUFTG6RZKTuMaMbsYkh4g9DgKCvtKnm570h1p1XlL4f0rLNCXhOplZb4jaRzle/evP6ev9aHMF3JQ==",
+  "dgSpecHash": "uJ2RAtArvQDnC7syX9sCWJ1D+vfrJ8OwnQL2VVYIRlP5+Tpx1JSOH/2rh22VDMcKc5cQxhwnUdVjyv2Au1Do4w==",
   "success": true,
-  "projectFilePath": "/Users/devaeterne/Projects/CoreApi_SignalR/signalR.DataaccessLayer/SignalR.DataAccessLayer.csproj",
+  "projectFilePath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DataAccessLayer/SignalR.DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "/Users/devaeterne/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

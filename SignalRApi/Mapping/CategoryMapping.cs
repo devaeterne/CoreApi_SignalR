@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using AutoMapper;
+using SignalR.DtoLayer.CategoryDto;
+using SignalR.EntityLayer.Entities;
+
+namespace SignalRApi.Mapping
+{
+    public class CategoryMapping : Profile
+    {
+        public CategoryMapping()
+        {
+            CreateMap<Category, ResultCategoryDto>().ReverseMap();
+            CreateMap<Category, CreateCategortDto>().ReverseMap();
+            CreateMap<Category, GetCategoryDto>().ReverseMap();
+            CreateMap<Category, UpdateCategoryDto>().ReverseMap();
+        }
+    }
+}

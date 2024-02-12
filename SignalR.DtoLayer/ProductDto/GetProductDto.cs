@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.DtoLayer.ProductDto
 {
-    public class GetProdudctDto
+    public class GetProductDto
     {
         public int ProductID { get; set; }
         public string ProductName { get; set; }
