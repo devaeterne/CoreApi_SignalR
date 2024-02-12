@@ -1,0 +1,11 @@
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/bin/Debug/net8.0/SignalR.EntityLayer.deps.json
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/bin/Debug/net8.0/SignalR.EntityLayer.dll
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/bin/Debug/net8.0/SignalR.EntityLayer.pdb
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.AssemblyInfoInputs.cache
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.AssemblyInfo.cs
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.csproj.CoreCompileInputs.cache
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.dll
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/refint/SignalR.EntityLayer.dll
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.pdb
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.EntityLayer/obj/Debug/net8.0/ref/SignalR.EntityLayer.dll

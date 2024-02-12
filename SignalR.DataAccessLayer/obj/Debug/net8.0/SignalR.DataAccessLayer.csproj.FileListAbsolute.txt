@@ -1,0 +1,5 @@
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.DataAccessLayer/obj/Debug/net8.0/SignalR.DataAccessLayer.csproj.AssemblyReference.cache
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.DataAccessLayer/obj/Debug/net8.0/SignalR.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.DataAccessLayer/obj/Debug/net8.0/SignalR.DataAccessLayer.AssemblyInfoInputs.cache
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.DataAccessLayer/obj/Debug/net8.0/SignalR.DataAccessLayer.AssemblyInfo.cs
+/Users/devaeterne/Projects/CoreAPI_SignalRProject/SignalR.DataAccessLayer/obj/Debug/net8.0/SignalR.DataAccessLayer.csproj.CoreCompileInputs.cache
