@@ -30,6 +30,40 @@ namespace SignalRApi.Controllers
             var values = _mapper.Map<List<ResultCategoryDto>>(_categoryService.TGetListAll());
             return Ok(values);
         }
+        [HttpPost]
+        public IActionResult CreateCategory(CreateCategoryDto createCategoryDto)
+        {
+            _categoryService.TAdd(new Category()
+            {
+                CatergoryName = createCategoryDto.CatergoryName,
+                CatergoryStatus = true
+            });
+            return Ok("Kategori Eklendi");
+        }
+        [HttpDelete]
+        public IActionResult DeleteCategory(int id)
+        {
+            var values = _categoryService.TGetByID(id);
+            _categoryService.TDelete(values);
+            return Ok("Kategori Silindi");
+        }
+        [HttpGet("GetCategory")]
+        public IActionResult GetCategory(int id)
+        {
+            var values = _categoryService.TGetByID(id);
+            return Ok(values);
+        }
+        [HttpPut]
+        public IActionResult UpdateCategory(UpdateCategoryDto updateCategoryDto)
+        {
+            _categoryService.TUpdate(new Category()
+            {
+                CatergoryID = updateCategoryDto.CatergoryID,
+                CatergoryName = updateCategoryDto.CatergoryName,
+                CatergoryStatus = updateCategoryDto.CatergoryStatus
+            });
+            return Ok("Kategori Güncelledi");
+        }
 
     }
 }
