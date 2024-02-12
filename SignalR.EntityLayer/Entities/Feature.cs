@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,7 @@ namespace SignalR.EntityLayer.Entities
 {
     public class Feature
     {
+        [Key]
         public int FeatureID { get; set; }
         public string Title1 { get; set; }
         public string Content1 { get; set; }

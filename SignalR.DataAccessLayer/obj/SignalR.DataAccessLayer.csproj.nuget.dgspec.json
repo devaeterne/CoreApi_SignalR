@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DataAccessLayer/SignalR.DataAccessLayer.csproj": {}
+    "/Users/devaeterne/Projects/CoreApi_SignalR/signalR.DataaccessLayer/SignalR.DataAccessLayer.csproj": {}
   },
   "projects": {
-    "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DataAccessLayer/SignalR.DataAccessLayer.csproj": {
+    "/Users/devaeterne/Projects/CoreApi_SignalR/signalR.DataaccessLayer/SignalR.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DataAccessLayer/SignalR.DataAccessLayer.csproj",
+        "projectUniqueName": "/Users/devaeterne/Projects/CoreApi_SignalR/signalR.DataaccessLayer/SignalR.DataAccessLayer.csproj",
         "projectName": "SignalR.DataAccessLayer",
-        "projectPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DataAccessLayer/SignalR.DataAccessLayer.csproj",
+        "projectPath": "/Users/devaeterne/Projects/CoreApi_SignalR/signalR.DataaccessLayer/SignalR.DataAccessLayer.csproj",
         "packagesPath": "/Users/devaeterne/.nuget/packages/",
-        "outputPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DataAccessLayer/obj/",
+        "outputPath": "/Users/devaeterne/Projects/CoreApi_SignalR/signalR.DataaccessLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/devaeterne/.nuget/NuGet/NuGet.Config"
