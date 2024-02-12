@@ -5,12 +5,544 @@
       "PackagePath": "staticwebassets/SignalRWebUI.bundle.scp.css"
     },
     {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/LICENSE",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/README.md",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/README.md"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/css/demo.css",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/css/demo.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/css/ready.css",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/css/ready.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/css/ready.css.map",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/css/ready.css.map"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/css/ready.min.css",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/css/ready.min.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.eot",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.eot"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.svg",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.svg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.ttf",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.woff",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.woff"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.woff2",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/fonts/line-awesome.woff2"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/img/menu.png",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/img/menu.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/img/menu2.png",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/img/menu2.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/img/profile.jpg",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/img/profile.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/img/profile2.jpg",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/img/profile2.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/core/bootstrap.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/core/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/core/jquery.3.2.1.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/core/jquery.3.2.1.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/core/popper.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/core/popper.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/demo.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/demo.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/chart-circle/circles.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/chart-circle/circles.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/chartist/chartist.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/chartist/chartist.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/jquery.mapael.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/jquery.mapael.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/README.txt",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/README.txt"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/france_departments.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/france_departments.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/france_departments.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/france_departments.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/usa_states.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/usa_states.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/usa_states.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/usa_states.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_mercator.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_mercator.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_mercator.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_mercator.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_miller.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_miller.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_miller.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-mapael/maps/world_countries_miller.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/ready.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/ready.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/js/ready.min.js",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/js/ready.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_background.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_background.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_components.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_components.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_layouts.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_layouts.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_line-awesome.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_line-awesome.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_outlinefocus.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_outlinefocus.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_plugins.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_plugins.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_responsive.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_responsive.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_typography.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_typography.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_variables.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/_variables.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_alerts.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_alerts.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_badges.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_badges.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_buttons.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_buttons.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_cards.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_cards.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_charts.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_charts.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_dropdowns.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_dropdowns.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_inputs.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_inputs.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_maps.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_maps.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_modals.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_modals.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_navbars.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_navbars.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_navpills.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_navpills.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_navsearch.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_navsearch.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_paginations.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_paginations.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_sliders.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_sliders.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_tables.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/components/_tables.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_chartist.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_chartist.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_jqueryscrollbar.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_jqueryscrollbar.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_jqueryui.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_jqueryui.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_toggle.scss",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/assets/sass/ready/plugins/_toggle.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/components.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/components.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/forms.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/forms.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/icons.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/icons.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/index.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/index.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/notifications.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/notifications.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/tables.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/tables.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/Ready-Bootstrap-Dashboard-master/typography.html",
+      "PackagePath": "staticwebassets/Ready-Bootstrap-Dashboard-master/typography.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/css/nunito-font.css",
+      "PackagePath": "staticwebassets/colorlib-regform-32/css/nunito-font.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/css/style.css",
+      "PackagePath": "staticwebassets/colorlib-regform-32/css/style.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-Black.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-Black.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-BlackItalic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-BlackItalic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-Bold.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-Bold.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-BoldItalic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-BoldItalic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-ExtraBold.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-ExtraBold.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-ExtraLight.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-ExtraLight.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-Italic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-Italic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-Light.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-Light.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-LightItalic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-LightItalic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-Regular.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-Regular.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-SemiBold.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-SemiBold.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/Nunito-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/Nunito-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/fonts/Nunito/OFL.txt",
+      "PackagePath": "staticwebassets/colorlib-regform-32/fonts/Nunito/OFL.txt"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/images/Pizza.jpg",
+      "PackagePath": "staticwebassets/colorlib-regform-32/images/Pizza.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/images/Pizza1.jpg",
+      "PackagePath": "staticwebassets/colorlib-regform-32/images/Pizza1.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/images/Sauce1.jpg",
+      "PackagePath": "staticwebassets/colorlib-regform-32/images/Sauce1.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/images/form-v6.jpg",
+      "PackagePath": "staticwebassets/colorlib-regform-32/images/form-v6.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/index.html",
+      "PackagePath": "staticwebassets/colorlib-regform-32/index.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/colorlib-regform-32/readme.txt",
+      "PackagePath": "staticwebassets/colorlib-regform-32/readme.txt"
+    },
+    {
       "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/about.html",
+      "PackagePath": "staticwebassets/feane-1.0.0/about.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/book.html",
+      "PackagePath": "staticwebassets/feane-1.0.0/book.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/css/bootstrap.css",
+      "PackagePath": "staticwebassets/feane-1.0.0/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/feane-1.0.0/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/css/responsive.css",
+      "PackagePath": "staticwebassets/feane-1.0.0/css/responsive.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/css/style.css",
+      "PackagePath": "staticwebassets/feane-1.0.0/css/style.css"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/css/style.css.map",
+      "PackagePath": "staticwebassets/feane-1.0.0/css/style.css.map"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/css/style.scss",
+      "PackagePath": "staticwebassets/feane-1.0.0/css/style.scss"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/feane-1.0.0/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/feane-1.0.0/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/feane-1.0.0/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/about-img.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/about-img.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/client1.jpg",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/client1.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/client2.jpg",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/client2.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f1.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f1.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f2.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f2.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f3.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f3.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f4.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f4.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f5.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f5.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f6.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f6.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f7.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f7.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f8.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f8.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/f9.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/f9.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/favicon.png",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/favicon.png"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/hero-bg.jpg",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/hero-bg.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/o1.jpg",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/o1.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/images/o2.jpg",
+      "PackagePath": "staticwebassets/feane-1.0.0/images/o2.jpg"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/index.html",
+      "PackagePath": "staticwebassets/feane-1.0.0/index.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/js/bootstrap.js",
+      "PackagePath": "staticwebassets/feane-1.0.0/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/js/custom.js",
+      "PackagePath": "staticwebassets/feane-1.0.0/js/custom.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/js/jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets/feane-1.0.0/js/jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/feane-1.0.0/menu.html",
+      "PackagePath": "staticwebassets/feane-1.0.0/menu.html"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/js/chat.js",
+      "PackagePath": "staticwebassets/js/chat.js"
     },
     {
       "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/js/site.js",
@@ -243,6 +775,22 @@
     {
       "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/microsoft/signalr/dist/browser/signalr.js",
+      "PackagePath": "staticwebassets/microsoft/signalr/dist/browser/signalr.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/microsoft/signalr/dist/browser/signalr.js.map",
+      "PackagePath": "staticwebassets/microsoft/signalr/dist/browser/signalr.js.map"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/microsoft/signalr/dist/browser/signalr.min.js",
+      "PackagePath": "staticwebassets/microsoft/signalr/dist/browser/signalr.min.js"
+    },
+    {
+      "Id": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/wwwroot/microsoft/signalr/dist/browser/signalr.min.js.map",
+      "PackagePath": "staticwebassets/microsoft/signalr/dist/browser/signalr.min.js.map"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.SignalRWebUI.Microsoft.AspNetCore.StaticWebAssets.props",

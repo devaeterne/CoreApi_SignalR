@@ -201,6 +201,12 @@ namespace SignalR.DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
 
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ContactID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -220,6 +226,10 @@ namespace SignalR.DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("ProductID");
+
+                    b.HasIndex("CategoryID");
+
+                    b.HasIndex("ContactID");
 
                     b.ToTable("Products");
                 });
@@ -279,6 +289,26 @@ namespace SignalR.DataAccessLayer.Migrations
                     b.HasKey("TestimonialID");
 
                     b.ToTable("Testimonials");
+                });
+
+            modelBuilder.Entity("SignalR.EntityLayer.Entities.Product", b =>
+                {
+                    b.HasOne("SignalR.EntityLayer.Entities.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SignalR.EntityLayer.Entities.Contact", null)
+                        .WithMany("Products")
+                        .HasForeignKey("ContactID");
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("SignalR.EntityLayer.Entities.Contact", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

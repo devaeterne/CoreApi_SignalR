@@ -9,14 +9,22 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SignalRWebUI
 build_property.RootNamespace = SignalRWebUI
-build_property.ProjectDir = /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/
+build_property.ProjectDir = /Users/devaeterne/Projects/CoreApi_SignalR/signalRWebUI/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI
+build_property.MSBuildProjectDirectory = /Users/devaeterne/Projects/CoreApi_SignalR/signalRWebUI
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/AdminLayout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
@@ -24,6 +32,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/Components/_LayoutFooterComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0xheW91dEZvb3RlckNvbXBvbmVudC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/Components/_LayoutHeaderComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0xheW91dEhlYWRlckNvbXBvbmVudC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/Components/_LayoutNavbarComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0xheW91dE5hdmJhckNvbXBvbmVudC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/Components/_LayoutScriptComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0xheW91dFNjcmlwdENvbXBvbmVudC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/Components/_LayoutSideBarComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0xheW91dFNpZGVCYXJDb21wb25lbnQvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/Error.cshtml]
