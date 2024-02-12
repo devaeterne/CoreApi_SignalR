@@ -1,0 +1,12 @@
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/bin/Debug/net8.0/SignalR.DtoLayer.deps.json
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/bin/Debug/net8.0/SignalR.DtoLayer.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/bin/Debug/net8.0/SignalR.DtoLayer.pdb
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.AssemblyInfoInputs.cache
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.AssemblyInfo.cs
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.csproj.CoreCompileInputs.cache
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.sourcelink.json
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/refint/SignalR.DtoLayer.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/SignalR.DtoLayer.pdb
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.DtoLayer/obj/Debug/net8.0/ref/SignalR.DtoLayer.dll

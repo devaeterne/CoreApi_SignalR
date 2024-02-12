@@ -141,3 +141,7 @@
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/obj/Debug/net8.0/SignalRApi.pdb
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/obj/Debug/net8.0/SignalRApi.genruntimeconfig.cache
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/obj/Debug/net8.0/ref/SignalRApi.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/AutoMapper.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/SignalR.DtoLayer.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/SignalR.DtoLayer.pdb
