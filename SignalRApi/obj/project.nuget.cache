@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0gMz2nwPS9GPwxc3wTmhPpL+0JLn6LLKsjbhhPnFLgz2i7JbUokMwTh6BsJ5Vn8Fxzm00sSMhUhd61bAt5vS2g==",
+  "dgSpecHash": "HLUFF0TzSHxMRILjkb84YMrEn5pcl+jbssgxGTlgtWAE1h+apAxBEopGZxW/A2Y/vznYVXrMBgc50VMWgZLKtA==",
   "success": true,
   "projectFilePath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/SignalRApi.csproj",
   "expectedPackageFiles": [
-    "/Users/devaeterne/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/devaeterne/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
@@ -15,7 +15,7 @@
     "/Users/devaeterne/.nuget/packages/microsoft.codeanalysis.csharp/4.5.0/microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/microsoft.codeanalysis.csharp.workspaces/4.5.0/microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.5.0/microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
-    "/Users/devaeterne/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/devaeterne/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.0/microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/microsoft.entityframeworkcore/8.0.1/microsoft.entityframeworkcore.8.0.1.nupkg.sha512",
@@ -87,16 +87,5 @@
     "/Users/devaeterne/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/devaeterne/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 13.0.1 was resolved.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
