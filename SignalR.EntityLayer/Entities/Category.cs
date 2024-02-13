@@ -5,9 +5,10 @@ namespace SignalR.EntityLayer.Entities
 	public class Category
 	{
 		[Key]
-		public int CatergoryID { get; set; }
-		public string CatergoryName { get; set; }
-		public bool CatergoryStatus { get; set; }
+		public int CategoryID { get; set; }
+		public string CategoryName { get; set; }
+		public bool CategoryStatus { get; set; }
+		public List<Product> Products { get; set; }
 
 	}
 }

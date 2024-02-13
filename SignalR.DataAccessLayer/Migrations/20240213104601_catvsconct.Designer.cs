@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SignalR.DataAccessLayer.Concrete;
 
@@ -11,9 +12,11 @@ using SignalR.DataAccessLayer.Concrete;
 namespace SignalR.DataAccessLayer.Migrations
 {
     [DbContext(typeof(SignalRContext))]
-    partial class SignalRContextModelSnapshot : ModelSnapshot
+    [Migration("20240213104601_catvsconct")]
+    partial class catvsconct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,20 +83,20 @@ namespace SignalR.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SignalR.EntityLayer.Entities.Category", b =>
                 {
-                    b.Property<int>("CategoryID")
+                    b.Property<int>("CatergoryID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CatergoryID"));
 
-                    b.Property<string>("CategoryName")
+                    b.Property<string>("CatergoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("CategoryStatus")
+                    b.Property<bool>("CatergoryStatus")
                         .HasColumnType("bit");
 
-                    b.HasKey("CategoryID");
+                    b.HasKey("CatergoryID");
 
                     b.ToTable("Categories");
                 });
@@ -204,6 +207,9 @@ namespace SignalR.DataAccessLayer.Migrations
                     b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ContactID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -225,6 +231,8 @@ namespace SignalR.DataAccessLayer.Migrations
                     b.HasKey("ProductID");
 
                     b.HasIndex("CategoryID");
+
+                    b.HasIndex("ContactID");
 
                     b.ToTable("Products");
                 });
@@ -294,10 +302,19 @@ namespace SignalR.DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("SignalR.EntityLayer.Entities.Contact", null)
+                        .WithMany("Products")
+                        .HasForeignKey("ContactID");
+
                     b.Navigation("Category");
                 });
 
             modelBuilder.Entity("SignalR.EntityLayer.Entities.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("SignalR.EntityLayer.Entities.Contact", b =>
                 {
                     b.Navigation("Products");
                 });

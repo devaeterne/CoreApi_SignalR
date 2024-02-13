@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SignalR.DtoLayer.ProductDto
+namespace SignalRWebUI.Dtos.ProductDto
 {
-    public class ResultProductDto
+    public class UpdateProductDto
     {
         public int ProductID { get; set; }
         public string ProductName { get; set; }

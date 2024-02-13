@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SignalR.BusinessLayer.Abstract;
+using SignalR.DataAccessLayer.Concrete;
 using SignalR.DtoLayer.ProductDto;
 using SignalR.EntityLayer.Entities;
 
@@ -33,8 +35,18 @@ namespace SignalRApi.Controllers
         [HttpGet("ProductListWithCategory")]
         public IActionResult ProductListWithCategory()
         {
-            var values = _mapper.Map<List<ResultProductWithCategory>>(_productService.TGetProductsWithCategories());
-            return Ok(values);
+            var context = new SignalRContext();
+            var values = context.Products.Include(x => x.Category).Select(y => new ResultProductWithCategory
+            {
+                Description = y.Description,
+                ImageURL = y.ImageURL,
+                Price = y.Price,
+                ProductID = y.ProductID,
+                ProductName = y.ProductName,
+                ProductStatus = y.ProductStatus,
+                CategoryName = y.Category.CategoryName
+            });
+            return Ok(values.ToList());
         }
 
         [HttpPost]
@@ -46,6 +58,7 @@ namespace SignalRApi.Controllers
                 Description = createProductDto.Description,
                 Price = createProductDto.Price,
                 ImageURL = createProductDto.ImageURL,
+                CategoryID = createProductDto.CategoryID,
                 ProductStatus = true,
             });
             return Ok("Ürün Eklendi");

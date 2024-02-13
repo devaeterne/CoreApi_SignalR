@@ -19,6 +19,8 @@ builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
 builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IProductService, ProductManager>();
+builder.Services.AddScoped<IProductDal, EfProductDal>();
 
 
 builder.Services.AddControllers();

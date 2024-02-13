@@ -13,23 +13,10 @@
             <div class="card-body">
                 <div class="form-group">
                     <label for="categoryName">Category Name</label>
-                    <input type="text" class="form-control input-square" name="CatergoryName" asp-for="CatergoryName"
+                    <input type="text" class="form-control input-square" name="CategoryName" asp-for="CategoryName"
                         placeholder="Category Name">
                 </div>
-                <input type="hidden" asp-for="CatergoryID" />
-                <div class="form-check">
-                    <label>Status</label><br />
-                    <label class="form-radio-label">
-                        <input class="form-radio-input" type="radio" asp-for="CatergoryStatus" name="CatergoryStatus"
-                            value="CatergoryStatus">
-                        <span class="form-radio-sign">Active</span>
-                    </label>
-                    <label class="form-radio-label ml-3">
-                        <input class="form-radio-input" type="radio" asp-for="CatergoryStatus" name="CatergoryStatus"
-                            value="CatergoryStatus">
-                        <span class="form-radio-sign">Passive</span>
-                    </label>
-                </div>
+                <input type="hidden" asp-for="CategoryID" />
             </div>
             <div class="card-action">
                 <button class="btn btn-success">Submit</button>

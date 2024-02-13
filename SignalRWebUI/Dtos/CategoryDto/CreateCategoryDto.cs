@@ -7,7 +7,7 @@ namespace SignalRWebUI.Dtos.CategoryDto
 {
     public class CreateCategoryDto
     {
-        public string CatergoryName { get; set; }
-        public bool CatergoryStatus { get; set; }
+        public string CategoryName { get; set; }
+        public bool CategoryStatus { get; set; }
     }
 }

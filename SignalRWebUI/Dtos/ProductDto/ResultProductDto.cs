@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SignalR.DtoLayer.ProductDto
+namespace SignalRWebUI.Dtos.ProductDto
 {
     public class ResultProductDto
     {
@@ -13,6 +13,6 @@ namespace SignalR.DtoLayer.ProductDto
         public decimal Price { get; set; }
         public string ImageURL { get; set; }
         public bool ProductStatus { get; set; }
-        public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
     }
 }

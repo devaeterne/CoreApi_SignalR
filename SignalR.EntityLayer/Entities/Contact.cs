@@ -14,6 +14,6 @@ namespace SignalR.EntityLayer.Entities
         public string PhoneNumber { get; set; }
         public string EMail { get; set; }
         public string FooterDescription { get; set; }
-        public List<Product> Products { get; set; }
+
     }
 }

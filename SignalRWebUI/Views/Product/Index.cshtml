@@ -1,25 +1,27 @@
-@model List<SignalRWebUI.Dtos.CategoryDto.ResultCategoryDto>
+@model List<ResultProductDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-<h4 class="page-title">Categories</h4>
+<h4 class="page-title">Product</h4>
 <div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <div class="card-title">Category List</div>
+                <div class="card-title">Product List</div>
             </div>
             <div class="card-body">
                 <div class="card-sub">
-                    This is the Category view of the ready dashboard :
+                    This is the Product view of the ready dashboard :
                 </div>
                 <table class="table mt-3">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Price</th>
                             <th scope="col">Status</th>
+                            <th scope="col">Category</th>
                             <th scope="col">Edit</th>
                             <th scope="col">Delete</th>
                         </tr>
@@ -28,12 +30,14 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@item.CategoryID</td>
+                                <td>@item.ProductID</td>
+                                <td>@item.ProductName</td>
+                                <td>@item.Price</td>
+                                <td>@item.ProductStatus</td>
                                 <td>@item.CategoryName</td>
-                                <td>@item.CategoryStatus</td>
-                                <td><a href="/category/EditCategory/@item.CategoryID"
-                                        class="btn btn-outline-success">Edit</a></td>
-                                <td><a href="/category/DeleteCategory/@item.CategoryID"
+                                <td><a href="/Product/EditProduct/@item.ProductID" class="btn btn-outline-success">Edit</a>
+                                </td>
+                                <td><a href="/Product/DeleteProduct/@item.ProductID"
                                         class="btn btn-outline-danger">Delete</a></td>
                             </tr>
                         }
@@ -41,7 +45,7 @@
 
                     </tbody>
                 </table>
-                <a href="/category/CreateCategory" class="btn btn-success">New Category</a>
+                <a href="/Product/CreateProduct" class="btn btn-success">New Product</a>
             </div>
         </div>
     </div>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SignalR.DataAccessLayer.Concrete;
 
@@ -11,9 +12,11 @@ using SignalR.DataAccessLayer.Concrete;
 namespace SignalR.DataAccessLayer.Migrations
 {
     [DbContext(typeof(SignalRContext))]
-    partial class SignalRContextModelSnapshot : ModelSnapshot
+    [Migration("20240213104653_catvsconct2")]
+    partial class catvsconct2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,20 +83,20 @@ namespace SignalR.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SignalR.EntityLayer.Entities.Category", b =>
                 {
-                    b.Property<int>("CategoryID")
+                    b.Property<int>("CatergoryID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CatergoryID"));
 
-                    b.Property<string>("CategoryName")
+                    b.Property<string>("CatergoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("CategoryStatus")
+                    b.Property<bool>("CatergoryStatus")
                         .HasColumnType("bit");
 
-                    b.HasKey("CategoryID");
+                    b.HasKey("CatergoryID");
 
                     b.ToTable("Categories");
                 });
