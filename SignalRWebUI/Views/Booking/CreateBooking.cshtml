@@ -1,0 +1,51 @@
+@model CreateBookingDto
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <form method="post">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Add Booking</div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">Name - Surname</label>
+                    <input type="text" class="form-control input-square" asp-for="Name" id="Name"
+                        placeholder="Name - Surname">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">Phone</label>
+                    <input type="text" class="form-control input-square" asp-for="Phone" id="Phone" placeholder="Phone">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">E-Mail</label>
+                    <input type="email" class="form-control input-square" asp-for="EMail" id="EMail"
+                        placeholder="E-Mail">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">Person Count</label>
+                    <input type="number" class="form-control input-square" asp-for="PersonCount" id="PersonCount"
+                        placeholder="Person Count">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">Date</label>
+                    <input type="date" class="form-control" asp-for="Date" id="Date" placeholder="Date">
+                </div>
+            </div>
+            <div class="card-action">
+                <button class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

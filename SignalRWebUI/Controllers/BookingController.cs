@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using SignalRWebUI.Dtos.CategoryDto;
+using SignalRWebUI.Dtos.BookingDto;
 
 namespace SignalRWebUI.Controllers
 {
-
-    public class CategoryController : Controller
+    public class BookingController : Controller
     {
-        private readonly ILogger<CategoryController> _logger;
+        private readonly ILogger<BookingController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public CategoryController(ILogger<CategoryController> logger, IHttpClientFactory httpClientFactory)
+        public BookingController(ILogger<BookingController> logger, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
             _httpClientFactory = httpClientFactory;
@@ -26,69 +25,68 @@ namespace SignalRWebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:5293/api/Category");
+            var responseMessage = await client.GetAsync("http://localhost:5293/api/Booking");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<ResultBookingDto>>(jsonData);
                 return View(values);
             }
             return View();
         }
         [HttpGet]
-        public IActionResult CreateCategory()
+        public IActionResult CreateBooking()
         {
 
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
+        public async Task<IActionResult> CreateBooking(CreateBookingDto createBookingDto)
         {
-            createCategoryDto.CategoryStatus = true;
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createCategoryDto);
+            var jsonData = JsonConvert.SerializeObject(createBookingDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("http://localhost:5293/api/category", stringContent);
+            var responseMessage = await client.PostAsync("http://localhost:5293/api/Booking", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Category");
+                return RedirectToAction("Index", "Booking");
             }
             return View();
         }
 
-        public async Task<IActionResult> DeleteCategory(int id)
+        public async Task<IActionResult> DeleteBooking(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:5293/api/category/{id}");
+            var responseMessage = await client.DeleteAsync($"http://localhost:5293/api/Booking/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Category");
+                return RedirectToAction("Index", "Booking");
             }
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> EditCategory(int id)
+        public async Task<IActionResult> EditBooking(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:5293/api/category/{id}");
+            var responseMessage = await client.GetAsync($"http://localhost:5293/api/Booking/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateCategoryDto>(jsonData);
+                var values = JsonConvert.DeserializeObject<UpdateBookingDto>(jsonData);
                 return View(values);
             }
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> EditCategory(UpdateCategoryDto updateCategoryDto)
+        public async Task<IActionResult> EditBooking(UpdateBookingDto updateBookingDto)
         {
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(updateCategoryDto);
+            var jsonData = JsonConvert.SerializeObject(updateBookingDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync($"http://localhost:5293/api/category/", stringContent);
+            var responseMessage = await client.PutAsync($"http://localhost:5293/api/Booking/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Category");
+                return RedirectToAction("Index", "Booking");
             }
             return View();
         }
