@@ -29,3 +29,6 @@
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/Debug/net8.0/SignalRWebUI.pdb
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/Debug/net8.0/SignalRWebUI.genruntimeconfig.cache
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/Debug/net8.0/ref/SignalRWebUI.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/Debug/net8.0/SignalRWebUI.csproj.AssemblyReference.cache
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/Debug/net8.0/SignalRWebUI.csproj.CopyComplete

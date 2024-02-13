@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Qb7BXFcD+G2FPmYEaXzv4MfiNliUWWB83do2+jlPQLgKimiBfwk1SZ3Qzq+wKwcOtHSoLXGBsUOFt9cwrat2gQ==",
+  "dgSpecHash": "+QJhUGK71Ni2qxy4XSgi2xH0RrknwARCiEXthZhQTtiFa8diyXAoNvXMq54bMm5s/3+SxxTCTIHLi70Mc/9sxQ==",
   "success": true,
   "projectFilePath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/devaeterne/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

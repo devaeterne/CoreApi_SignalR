@@ -1,0 +1,39 @@
+@model SignalRWebUI.Dtos.CategoryDto.UpdateCategoryDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <form method="post">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Edit Category</div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">Category Name</label>
+                    <input type="text" class="form-control input-square" name="CatergoryName" asp-for="CatergoryName"
+                        placeholder="Category Name">
+                </div>
+                <input type="hidden" asp-for="CatergoryID" />
+                <div class="form-check">
+                    <label>Status</label><br />
+                    <label class="form-radio-label">
+                        <input class="form-radio-input" type="radio" asp-for="CatergoryStatus" name="CatergoryStatus"
+                            value="CatergoryStatus">
+                        <span class="form-radio-sign">Active</span>
+                    </label>
+                    <label class="form-radio-label ml-3">
+                        <input class="form-radio-input" type="radio" asp-for="CatergoryStatus" name="CatergoryStatus"
+                            value="CatergoryStatus">
+                        <span class="form-radio-sign">Passive</span>
+                    </label>
+                </div>
+            </div>
+            <div class="card-action">
+                <button class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
