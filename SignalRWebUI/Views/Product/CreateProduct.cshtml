@@ -1,0 +1,49 @@
+@model CreateProductDto
+@{
+    ViewData["Title"] = "Create Product";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <form method="post">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Add Product</div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="ProductName">Product Name</label>
+                    <input type="text" class="form-control input-square" asp-for="ProductName" id="ProductName"
+                        placeholder="Product Name">
+                </div>
+                <div class="form-group">
+                    <label for="Description">Product Descrpition</label>
+                    <input type="text" class="form-control input-square" asp-for="Description" id="Description"
+                        placeholder="Product Description">
+                </div>
+                <div class="form-group">
+                    <label for="Price">Product Price</label>
+                    <input type="text" class="form-control input-square" asp-for="Price" id="Price"
+                        placeholder="Product Price">
+                </div>
+                <div class="form-group">
+                    <label for="ImageURL">Product Image</label>
+                    <input type="text" class="form-control input-square" asp-for="ImageURL" id="ImageURL"
+                        placeholder="Product ImageURL">
+                </div>
+                <div class="form-group">
+                    <label for="CategoryID">Product Category</label>
+
+                    @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.c, new
+                        {
+                            @class =
+                             "form-control"
+                        })
+                </div>
+            </div>
+            <div class="card-action">
+                <button class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </form>
+</div>

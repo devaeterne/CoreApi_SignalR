@@ -5,14 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using SignalRWebUI.Dtos.CategoryDto;
 using SignalRWebUI.Dtos.ProductDto;
 
 namespace SignalRWebUI.Controllers
 {
     public class ProductController : Controller
     {
+
         private readonly ILogger<ProductController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
 
@@ -35,9 +38,19 @@ namespace SignalRWebUI.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult CreateProduct()
+        public async Task<IActionResult> CreateProduct()
         {
-
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("http://localhost:5293/api/Category/");
+            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
+            List<SelectListItem> values2 = (from x in values
+                                            select new SelectListItem
+                                            {
+                                                Text = x.CategoryName,
+                                                Value = x.CategoryID.ToString(),
+                                            }).ToList();
+            ViewBag.c = values2;
             return View();
         }
         [HttpPost]
@@ -54,7 +67,6 @@ namespace SignalRWebUI.Controllers
             }
             return View();
         }
-        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             var client = _httpClientFactory.CreateClient();
@@ -68,6 +80,17 @@ namespace SignalRWebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> EditProduct(int id)
         {
+            var client1 = _httpClientFactory.CreateClient();
+            var responseMessage1 = await client1.GetAsync("http://localhost:5293/api/Category/");
+            var jsonData1 = await responseMessage1.Content.ReadAsStringAsync();
+            var values1 = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData1);
+            List<SelectListItem> values2 = (from x in values1
+                                            select new SelectListItem
+                                            {
+                                                Text = x.CategoryName,
+                                                Value = x.CategoryID.ToString()
+                                            }).ToList();
+            ViewBag.c = values2;
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync($"http://localhost:5293/api/Product/{id}");
             if (responseMessage.IsSuccessStatusCode)
@@ -81,6 +104,7 @@ namespace SignalRWebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> EditProduct(UpdateProductDto updateProductDto)
         {
+            updateProductDto.ProductStatus = true;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateProductDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");

@@ -63,21 +63,21 @@ namespace SignalRApi.Controllers
             });
             return Ok("Ürün Eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var values = _productService.TGetByID(id);
             _productService.TDelete(values);
             return Ok("Ürün Bilgisi Silindi");
         }
-        [HttpGet("GetProduct")]
+        [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
             var values = _productService.TGetByID(id);
             return Ok(values);
         }
         [HttpPut]
-        public IActionResult UpdateDiscount(UpdateProductDto updateProductDto)
+        public IActionResult UpdateProduct(UpdateProductDto updateProductDto)
         {
             _productService.TUpdate(new Product()
             {
@@ -86,7 +86,8 @@ namespace SignalRApi.Controllers
                 Description = updateProductDto.Description,
                 Price = updateProductDto.Price,
                 ImageURL = updateProductDto.ImageURL,
-                ProductStatus = updateProductDto.ProductStatus
+                ProductStatus = updateProductDto.ProductStatus,
+                CategoryID = updateProductDto.CategoryID
             });
             return Ok("Ürün Bilgileri Güncelledi");
         }
