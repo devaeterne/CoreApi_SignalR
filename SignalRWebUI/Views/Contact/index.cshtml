@@ -1,0 +1,49 @@
+@model List<ResultContactDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<h4 class="page-title">Contact</h4>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Contact</div>
+            </div>
+            <div class="card-body">
+                <div class="card-sub">
+                    This is the Contact view of the ready dashboard :
+                </div>
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">E-Mail</th>
+                            <th scope="col">Footer</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ContactID</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.EMail</td>
+                                <td>@item.FooterDescription</td>
+                                <td><a href="/Contact/EditContact/@item.ContactID" class="btn btn-outline-success">Edit</a>
+                                </td>
+                                <td><a href="/Contact/DeleteContact/@item.ContactID"
+                                        class="btn btn-outline-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

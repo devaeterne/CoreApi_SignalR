@@ -48,7 +48,7 @@ namespace SignalRApi.Controllers
             _contactService.TDelete(values);
             return Ok("İletişim Bilgileri Silindi");
         }
-        [HttpGet("GetContact")]
+        [HttpGet("{id}")]
         public IActionResult GetContact(int id)
         {
             var values = _contactService.TGetByID(id);
