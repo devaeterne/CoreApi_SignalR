@@ -1,0 +1,51 @@
+@model CreateTestimonialDto
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <form method="post">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Add About</div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control input-square" asp-for="Name" id="Name" placeholder="Name">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="Title">Title</label>
+                    <input type="text" class="form-control input-square" asp-for="Title" id="Title" placeholder="Title">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="Status">Status</label>
+                    <input type="text" class="form-control input-square" asp-for="Status" id="Status"
+                        placeholder="Status">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="ImageUrl">ImageUrl</label>
+                    <input type="text" class="form-control input-square" asp-for="ImageUrl" id="ImageUrl"
+                        placeholder="Image URL ">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="categoryName">Comment</label>
+                    <input type="text-area" class="form-control input-square" asp-for="Comment" id="Comment"
+                        placeholder="Comment">
+                </div>
+            </div>
+            <div class="card-action">
+                <button class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
