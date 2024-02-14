@@ -1,0 +1,51 @@
+@model CreateFeatureDto
+@{
+    ViewData["Title"] = "Create Feature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <form method="post">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Add Feature</div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="ProductName">Title 1</label>
+                    <input type="text" class="form-control input-square" asp-for="Title1" id="Title"
+                        placeholder="Product Name">
+                </div>
+                <div class="form-group">
+                    <label for="Description">Content 1</label>
+                    <input type="text" class="form-control input-square" asp-for="Content1" id="Description"
+                        placeholder="Product Description">
+                </div>
+                <div class="form-group">
+                    <label for="Price">Title 2</label>
+                    <input type="text" class="form-control input-square" asp-for="Title2" id="Amount"
+                        placeholder="Title2">
+                </div>
+                <div class="form-group">
+                    <label for="ImageURL">Content 2</label>
+                    <input type="text" class="form-control input-square" asp-for="Content2" id="ImageURL"
+                        placeholder="Content2">
+                </div>
+                <div class="form-group">
+                    <label for="ImageURL">Feature Description</label>
+                    <input type="text" class="form-control input-square" asp-for="Title3" id="Description"
+                        placeholder="Description">
+                </div>
+                <div class="form-group">
+                    <label for="ImageURL">Feature Description</label>
+                    <input type="text" class="form-control input-square" asp-for="Content3" id="Description"
+                        placeholder="Description">
+                </div>
+
+            </div>
+            <div class="card-action">
+                <button class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </form>
+</div>

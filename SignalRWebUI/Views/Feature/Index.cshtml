@@ -1,0 +1,57 @@
+@model List<ResultFeatureDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<h4 class="page-title">Feature</h4>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Feature</div>
+            </div>
+            <div class="card-body">
+                <div class="card-sub">
+                    This is the Feature view of the ready dashboard :
+                </div>
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title1</th>
+                            <th scope="col">Content1</th>
+                            <th scope="col">Title2</th>
+                            <th scope="col">Content2</th>
+                            <th scope="col">Title3</th>
+                            <th scope="col">Content3</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.FeatureID</td>
+                                <td>@item.Title1</td>
+                                <td>@item.Content1</td>
+                                <td>@item.Title2</td>
+                                <td>@item.Content2</td>
+                                <td>@item.Title3</td>
+                                <td>@item.Content3</td>
+                                <td><a href="/Feature/EditFeature/@item.FeatureID" class="btn btn-outline-success">Edit</a>
+                                </td>
+                                <td><a href="/Feature/DeleteFeature/@item.FeatureID"
+                                        class="btn btn-outline-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <a href="/Feature/CreateFeature" class="btn btn-success">New Feature</a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
