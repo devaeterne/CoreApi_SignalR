@@ -30,7 +30,7 @@ namespace SignalRApi.Controllers
             return Ok(values);
         }
         [HttpPost]
-        public IActionResult CreateProduct(CreateSocialMediaDto createSocialMediaDto)
+        public IActionResult CreateSocialMedia(CreateSocialMediaDto createSocialMediaDto)
         {
             _socialMediaService.TAdd(new SocialMedia()
             {
@@ -39,31 +39,32 @@ namespace SignalRApi.Controllers
                 Icon = createSocialMediaDto.Icon
 
             });
-            return Ok("Ürün Eklendi");
+            return Ok("Hesap Eklendi");
         }
-        [HttpDelete]
-        public IActionResult DeleteProduct(int id)
+        [HttpDelete("{id}")]
+        public IActionResult DeleteSocialMedia(int id)
         {
             var values = _socialMediaService.TGetByID(id);
             _socialMediaService.TDelete(values);
             return Ok("Ürün Bilgisi Silindi");
         }
-        [HttpGet("GetProduct")]
-        public IActionResult GetProduct(int id)
+        [HttpGet("{id}")]
+        public IActionResult GetSocialMedia(int id)
         {
             var values = _socialMediaService.TGetByID(id);
             return Ok(values);
         }
         [HttpPut]
-        public IActionResult UpdateDiscount(UpdateSocialMediaDto updateSocialMediaDto)
+        public IActionResult UpdateSocialMedia(UpdateSocialMediaDto updateSocialMediaDto)
         {
             _socialMediaService.TUpdate(new SocialMedia()
             {
+                SocialMediaID = updateSocialMediaDto.SocialMediaID,
                 Title = updateSocialMediaDto.Title,
                 URL = updateSocialMediaDto.URL,
                 Icon = updateSocialMediaDto.Icon
             });
-            return Ok("Ürün Bilgileri Güncelledi");
+            return Ok("Hesap Güncelledi");
         }
     }
 }
