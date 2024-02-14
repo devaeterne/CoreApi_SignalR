@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SignalRWebUI
 build_property.RootNamespace = SignalRWebUI
-build_property.ProjectDir = /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/
+build_property.ProjectDir = /Users/devaeterne/Projects/CoreApi_SignalR/signalRWebUI/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI
+build_property.MSBuildProjectDirectory = /Users/devaeterne/Projects/CoreApi_SignalR/signalRWebUI
 build_property._RazorSourceGeneratorDebug = 
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/About/CreateAbout.cshtml]
@@ -144,6 +144,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/SignalRDefault/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2lnbmFsUkRlZmF1bHQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/SocialMedia/CreateSocialMedia.cshtml]
