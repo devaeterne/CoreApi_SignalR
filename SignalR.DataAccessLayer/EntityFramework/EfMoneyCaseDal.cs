@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using SignalR.DataAccessLayer.Abstract;
+using SignalR.DataAccessLayer.Concrete;
+using SignalR.DataAccessLayer.Repositories;
 using SignalR.EntityLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfMoneyCaseDal
+    public class EfMoneyCaseDal : GenericRepository<MoneyCase>, IMoneyCaseDal
     {
-        public interface IMoneyCaseDal : IGenericDal<MoneyCase>
+        public EfMoneyCaseDal(SignalRContext context) : base(context)
         {
-            decimal TotalMoneyCaseAmount();
+        }
+
+        public decimal TotalMoneyCaseAmount()
+        {
+            using var context = new SignalRContext();
+            return context.MoneyCases.Select(x => x.TotalAmount).FirstOrDefault();
         }
     }
 }
