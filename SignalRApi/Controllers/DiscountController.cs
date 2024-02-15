@@ -1,22 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
+using SignalR.DtoLayer.ContactDto;
 using SignalR.DtoLayer.DiscountDto;
 using SignalR.EntityLayer.Entities;
 
+
 namespace SignalRApi.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class DiscountController : ControllerBase
     {
         private readonly IDiscountService _discountService;
         private readonly IMapper _mapper;
-
         public DiscountController(IDiscountService discountService, IMapper mapper)
         {
             _discountService = discountService;
@@ -26,46 +24,67 @@ namespace SignalRApi.Controllers
         [HttpGet]
         public IActionResult DiscountList()
         {
-            var values = _mapper.Map<List<ResultDiscountDto>>(_discountService.TGetListAll());
-            return Ok(values);
+            var value = _mapper.Map<List<ResultDiscountDto>>(_discountService.TGetListAll());
+            return Ok(value);
         }
         [HttpPost]
         public IActionResult CreateDiscount(CreateDiscountDto createDiscountDto)
         {
             _discountService.TAdd(new Discount()
             {
-                Title = createDiscountDto.Title,
                 Amount = createDiscountDto.Amount,
                 Description = createDiscountDto.Description,
-                ImageURL = createDiscountDto.ImageURL
+                ImageUrl = createDiscountDto.ImageUrl,
+                Title = createDiscountDto.Title,
+                Status = false
             });
             return Ok("İndirim Bilgisi Eklendi");
         }
         [HttpDelete("{id}")]
         public IActionResult DeleteDiscount(int id)
         {
-            var values = _discountService.TGetByID(id);
-            _discountService.TDelete(values);
+            var value = _discountService.TGetByID(id);
+            _discountService.TDelete(value);
             return Ok("İndirim Bilgisi Silindi");
         }
         [HttpGet("{id}")]
         public IActionResult GetDiscount(int id)
         {
-            var values = _discountService.TGetByID(id);
-            return Ok(values);
+            var value = _discountService.TGetByID(id);
+            return Ok(value);
         }
         [HttpPut]
         public IActionResult UpdateDiscount(UpdateDiscountDto updateDiscountDto)
         {
             _discountService.TUpdate(new Discount()
             {
-                DiscountID = updateDiscountDto.DiscountID,
-                Title = updateDiscountDto.Title,
                 Amount = updateDiscountDto.Amount,
                 Description = updateDiscountDto.Description,
-                ImageURL = updateDiscountDto.ImageURL
+                ImageUrl = updateDiscountDto.ImageUrl,
+                Title = updateDiscountDto.Title,
+                DiscountID = updateDiscountDto.DiscountID,
+                Status = false
             });
-            return Ok("İletişim Bilgileri Güncelledi");
+            return Ok("İndirim Bilgisi Güncellendi");
+        }
+        [HttpGet("ChangeStatusToTrue/{id}")]
+        public IActionResult ChangeStatusToTrue(int id)
+        {
+            _discountService.TChangeStatusToTrue(id);
+            return Ok("Ürün İndirimi Aktif Hale Getirildi");
+        }
+
+        [HttpGet("ChangeStatusToFalse/{id}")]
+        public IActionResult ChangeStatusToFalse(int id)
+        {
+            _discountService.TChangeStatusToFalse(id);
+            return Ok("Ürün İndirimi Pasif Hale Getirildi");
+        }
+
+        [HttpGet("GetListByStatusTrue")]
+        public IActionResult GetListByStatusTrue()
+        {
+            return Ok(_discountService.TGetListByStatusTrue());
         }
     }
 }

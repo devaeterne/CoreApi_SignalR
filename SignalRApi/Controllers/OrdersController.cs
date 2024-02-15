@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
 
 namespace SignalRApi.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class OrdersController : ControllerBase
     {
         private readonly IOrderService _orderService;
@@ -38,7 +35,7 @@ namespace SignalRApi.Controllers
         [HttpGet("TodayTotalPrice")]
         public IActionResult TodayTotalPrice()
         {
-            return Ok(_orderService.TTodayTotalPrice());
+            return Ok(_orderService.TTodayTotalPrice());    
         }
     }
 }

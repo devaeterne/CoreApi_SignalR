@@ -1,28 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SignalRWebUI.Dtos.AboutDto;
+using SignalRWebUI.Dtos.AboutDtos;
+using System.Text;
 
 namespace SignalRWebUI.Controllers
 {
-
     public class AboutController : Controller
     {
-        private readonly ILogger<AboutController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
-
-        public AboutController(ILogger<AboutController> logger, IHttpClientFactory httpClientFactory)
+        public AboutController(IHttpClientFactory httpClientFactory)
         {
-            _logger = logger;
             _httpClientFactory = httpClientFactory;
         }
-
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
@@ -49,23 +38,22 @@ namespace SignalRWebUI.Controllers
             var responseMessage = await client.PostAsync("http://localhost:5293/api/About", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "About");
+                return RedirectToAction("Index");
             }
             return View();
         }
-        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAbout(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.DeleteAsync($"http://localhost:5293/api/About/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "About");
+                return RedirectToAction("Index");
             }
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> EditAbout(int id)
+        public async Task<IActionResult> UpdateAbout(int id)
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync($"http://localhost:5293/api/About/{id}");
@@ -78,23 +66,17 @@ namespace SignalRWebUI.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> EditAbout(UpdateAboutDto updateAboutDto)
+        public async Task<IActionResult> UpdateAbout(UpdateAboutDto updateAboutDto)
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateAboutDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync($"http://localhost:5293/api/About/", stringContent);
+            var responseMessage = await client.PutAsync("http://localhost:5293/api/About/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "About");
+                return RedirectToAction("Index");
             }
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
         }
     }
 }

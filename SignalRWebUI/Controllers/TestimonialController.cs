@@ -1,33 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SignalRWebUI.Dtos.AboutDto;
-using SignalRWebUI.Dtos.TetimonialDto;
+using SignalRWebUI.Dtos.TestimonialDtos;
+using System.Text;
 
 namespace SignalRWebUI.Controllers
 {
-
     public class TestimonialController : Controller
     {
-        private readonly ILogger<TestimonialController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
-
-        public TestimonialController(ILogger<TestimonialController> logger, IHttpClientFactory httpClientFactory)
+        public TestimonialController(IHttpClientFactory httpClientFactory)
         {
-            _logger = logger;
             _httpClientFactory = httpClientFactory;
         }
-
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:5293/api/Testimonial");
+            var responseMessage = await client.GetAsync("https://localhost:7186/api/Testimonial");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -47,29 +35,28 @@ namespace SignalRWebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createTestimonialDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("http://localhost:5293/api/Testimonial", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7186/api/Testimonial", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Testimonial");
+                return RedirectToAction("Index");
             }
             return View();
         }
-        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTestimonial(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:5293/api/Testimonial/{id}");
+            var responseMessage = await client.DeleteAsync($"https://localhost:7186/api/Testimonial/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Testimonial");
+                return RedirectToAction("Index");
             }
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> EditTestimonial(int id)
+        public async Task<IActionResult> UpdateTestimonial(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:5293/api/Testimonial/{id}");
+            var responseMessage = await client.GetAsync($"https://localhost:7186/api/Testimonial/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -79,23 +66,17 @@ namespace SignalRWebUI.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> EditTestimonial(UpdateTestimonialDto updateTestimonialDto)
+        public async Task<IActionResult> UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto)
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateTestimonialDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync($"http://localhost:5293/api/Testimonial/", stringContent);
+            var responseMessage = await client.PutAsync("https://localhost:7186/api/Testimonial/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Testimonial");
+                return RedirectToAction("Index");
             }
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
         }
     }
 }

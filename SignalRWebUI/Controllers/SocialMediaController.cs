@@ -1,31 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SignalRWebUI.Dtos.SocialMediaDto;
+using SignalRWebUI.Dtos.SocialMediaDtos;
+using System.Text;
 
 namespace SignalRWebUI.Controllers
 {
     public class SocialMediaController : Controller
     {
-        private readonly ILogger<SocialMediaController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
-
-        public SocialMediaController(ILogger<SocialMediaController> logger, IHttpClientFactory httpClientFactory)
+        public SocialMediaController(IHttpClientFactory httpClientFactory)
         {
-            _logger = logger;
             _httpClientFactory = httpClientFactory;
         }
-
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:5293/api/SocialMedia");
+            var responseMessage = await client.GetAsync("https://localhost:7186/api/SocialMedia");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -35,41 +25,38 @@ namespace SignalRWebUI.Controllers
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> CreateSocialMedia()
+        public IActionResult CreateSocialMedia()
         {
-
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> CreateSocialMedia(CreateSocialMediaDto createSocialMediaDto)
         {
-
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createSocialMediaDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("http://localhost:5293/api/SocialMedia", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7186/api/SocialMedia", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "SocialMedia");
+                return RedirectToAction("Index");
             }
             return View();
         }
         public async Task<IActionResult> DeleteSocialMedia(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:5293/api/SocialMedia/{id}");
+            var responseMessage = await client.DeleteAsync($"https://localhost:7186/api/SocialMedia/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "SocialMedia");
+                return RedirectToAction("Index");
             }
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> EditSocialMedia(int id)
+        public async Task<IActionResult> UpdateSocialMedia(int id)
         {
-
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:5293/api/SocialMedia/{id}");
+            var responseMessage = await client.GetAsync($"https://localhost:7186/api/SocialMedia/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -79,24 +66,17 @@ namespace SignalRWebUI.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> EditSocialMedia(UpdateSocialMediaDto updateSocialMediaDto)
+        public async Task<IActionResult> UpdateSocialMedia(UpdateSocialMediaDto updateSocialMediaDto)
         {
-
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateSocialMediaDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync($"http://localhost:5293/api/SocialMedia/", stringContent);
+            var responseMessage = await client.PutAsync("https://localhost:7186/api/SocialMedia/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "SocialMedia");
+                return RedirectToAction("Index");
             }
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
         }
     }
 }

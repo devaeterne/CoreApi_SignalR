@@ -35,11 +35,11 @@ namespace SignalRApi.Controllers
             _featureService.TAdd(new Feature()
             {
                 Title1 = createFeatureDto.Title1,
-                Content1 = createFeatureDto.Content1,
+                Description1 = createFeatureDto.Description1,
                 Title2 = createFeatureDto.Title2,
-                Content2 = createFeatureDto.Content2,
+                Description2 = createFeatureDto.Description2,
                 Title3 = createFeatureDto.Title3,
-                Content3 = createFeatureDto.Content3
+                Description3 = createFeatureDto.Description3
             });
             return Ok("Feature Eklendi");
         }
@@ -63,11 +63,11 @@ namespace SignalRApi.Controllers
             {
                 FeatureID = updateFeatureDto.FeatureID,
                 Title1 = updateFeatureDto.Title1,
-                Content1 = updateFeatureDto.Content1,
+                Description1 = updateFeatureDto.Description1,
                 Title2 = updateFeatureDto.Title2,
-                Content2 = updateFeatureDto.Content2,
+                Description2 = updateFeatureDto.Description2,
                 Title3 = updateFeatureDto.Title3,
-                Content3 = updateFeatureDto.Content3
+                Description3 = updateFeatureDto.Description3
             });
             return Ok("Feature Bilgileri Güncelledi");
         }

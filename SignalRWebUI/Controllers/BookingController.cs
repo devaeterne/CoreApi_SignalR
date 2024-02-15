@@ -1,31 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SignalRWebUI.Dtos.BookingDto;
+using SignalRWebUI.Dtos.BookingDtos;
+using System.Text;
 
 namespace SignalRWebUI.Controllers
 {
     public class BookingController : Controller
     {
-        private readonly ILogger<BookingController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
-
-        public BookingController(ILogger<BookingController> logger, IHttpClientFactory httpClientFactory)
+        public BookingController(IHttpClientFactory httpClientFactory)
         {
-            _logger = logger;
             _httpClientFactory = httpClientFactory;
         }
-
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:5293/api/Booking");
+            var responseMessage = await client.GetAsync("https://localhost:7186/api/Booking");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -37,38 +27,37 @@ namespace SignalRWebUI.Controllers
         [HttpGet]
         public IActionResult CreateBooking()
         {
-
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> CreateBooking(CreateBookingDto createBookingDto)
         {
+            createBookingDto.Description = "Rezervasyon Alındı";
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createBookingDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("http://localhost:5293/api/Booking", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7186/api/Booking", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Booking");
+                return RedirectToAction("Index");
             }
             return View();
         }
-
         public async Task<IActionResult> DeleteBooking(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:5293/api/Booking/{id}");
+            var responseMessage = await client.DeleteAsync($"https://localhost:7186/api/Booking/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Booking");
+                return RedirectToAction("Index");
             }
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> EditBooking(int id)
+        public async Task<IActionResult> UpdateBooking(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:5293/api/Booking/{id}");
+            var responseMessage = await client.GetAsync($"https://localhost:7186/api/Booking/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -78,23 +67,30 @@ namespace SignalRWebUI.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> EditBooking(UpdateBookingDto updateBookingDto)
+        public async Task<IActionResult> UpdateBooking(UpdateBookingDto updateBookingDto)
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateBookingDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync($"http://localhost:5293/api/Booking/", stringContent);
+            var responseMessage = await client.PutAsync("https://localhost:7186/api/Booking/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Booking");
+                return RedirectToAction("Index");
             }
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public async Task<IActionResult> BookingStatusApproved(int id)
         {
-            return View("Error!");
-        }
-    }
+			var client = _httpClientFactory.CreateClient();
+			await client.GetAsync($"https://localhost:7186/api/Booking/BookingStatusApproved/{id}");
+            return RedirectToAction("Index");
+		}
+
+		public async Task<IActionResult> BookingStatusCancelled(int id)
+		{
+			var client = _httpClientFactory.CreateClient();
+			await client.GetAsync($"https://localhost:7186/api/Booking/BookingStatusCancelled/{id}");
+			return RedirectToAction("Index");
+		}
+	}
 }

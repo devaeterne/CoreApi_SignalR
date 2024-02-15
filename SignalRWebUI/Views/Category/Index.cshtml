@@ -1,49 +1,52 @@
-@model List<SignalRWebUI.Dtos.CategoryDto.ResultCategoryDto>
+﻿@model List<SignalRWebUI.Dtos.CategoryDtos.ResultCategoryDto>
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/AdminLayout/Index.cshtml";
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+	int count = 0;
 }
-<h4 class="page-title">Categories</h4>
-<div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">Category List</div>
-            </div>
-            <div class="card-body">
-                <div class="card-sub">
-                    This is the Category view of the ready dashboard :
-                </div>
-                <table class="table mt-3">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Edit</th>
-                            <th scope="col">Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.CategoryID</td>
-                                <td>@item.CategoryName</td>
-                                <td>@item.CategoryStatus</td>
-                                <td><a href="/category/EditCategory/@item.CategoryID"
-                                        class="btn btn-outline-success">Edit</a></td>
-                                <td><a href="/category/DeleteCategory/@item.CategoryID"
-                                        class="btn btn-outline-danger">Delete</a></td>
-                            </tr>
-                        }
 
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Kategori İşlemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
 
-                    </tbody>
-                </table>
-                <a href="/category/CreateCategory" class="btn btn-success">New Category</a>
-            </div>
-        </div>
-    </div>
-
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Kategori Listesi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Kategori ile ilgili işlemleri aşağıdan gerçekleştirebilirsiniz.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Kategori Adı</th>
+									<th scope="col">Durum</th>
+									<th scope="col">Sil</th>
+									<th scope="col">Güncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach(var item in Model)
+								{
+									count++;
+									<tr>
+										<th>@count</th>
+										<td>@item.CategoryName</td>
+										<td>@item.Status</td>
+										<td><a href="/Category/DeleteCategory/@item.CategoryID" class="btn btn-outline-danger">Sil</a></td>
+										<td><a href="/Category/UpdateCategory/@item.CategoryID" class="btn btn-outline-success">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/Category/CreateCategory/" class="btn btn-outline-primary">Yeni Kategori Girişi</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

@@ -1,36 +1,44 @@
-@model CreateSocialMediaDto
+﻿@model CreateSocialMediaDto
+
 @{
-    ViewData["Title"] = "Create Discount";
+    ViewData["Title"] = "CreateSocialMedia";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<div class="col-md-12">
-    <form method="post">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">Add Social Media</div>
-            </div>
-            <div class="card-body">
-                <div class="form-group">
-                    <label for="ProductName">Title</label>
-                    <input type="text" class="form-control input-square" asp-for="Title" id="Title"
-                        placeholder="Product Name">
-                </div>
-                <div class="form-group">
-                    <label for="Description">URL</label>
-                    <input type="text" class="form-control input-square" asp-for="URL" id="Description"
-                        placeholder="Product Description">
-                </div>
-                <div class="form-group">
-                    <label for="Price">Icon</label>
-                    <input type="text" class="form-control input-square" asp-for="Icon" id="Amount"
-                        placeholder="Product Price">
-                </div>
-
-            </div>
-            <div class="card-action">
-                <button class="btn btn-success">Create</button>
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Sosyal Medya İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Sosyal Medya Hesabı Girişi</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="Title">Başlık Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Title" id="Title">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="Icon">İkon Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Icon" id="Icon">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="Url">Link Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Url" id="Url">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Sosyal Medya Hesabını Ekle</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </form>
+    </div>
 </div>

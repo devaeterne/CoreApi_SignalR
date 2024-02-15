@@ -1,39 +1,44 @@
-@model CreateAboutDto
+﻿@model CreateAboutDto
+
 @{
     ViewData["Title"] = "CreateAbout";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<div class="col-md-12">
-    <form method="post">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">Add About</div>
-            </div>
-            <div class="card-body">
-                <div class="form-group">
-                    <label for="categoryName">Title</label>
-                    <input type="text" class="form-control input-square" asp-for="Title" id="categoryName"
-                        placeholder="Category Name">
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="form-group">
-                    <label for="categoryName">Company Image</label>
-                    <input type="text" class="form-control input-square" asp-for="ImageURL" id="categoryName"
-                        placeholder="Category Name">
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="form-group">
-                    <label for="categoryName">Description</label>
-                    <input type="text-area" class="form-control input-square" asp-for="Description" id="categoryName"
-                        placeholder="Category Name">
-                </div>
-            </div>
-            <div class="card-action">
-                <button class="btn btn-success">Submit</button>
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Ana Sayfa Hakkımızda İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Hakkımızda Yazı Girişi</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="Title">Başlığı Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Title" id="Title">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="ImageUrl">Görselin Url'ini Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ImageUrl" id="ImageUrl">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="Description">Açıklamayı Giriniz</label>
+                                <textarea rows="5" class="form-control" asp-for="Description" id="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Hakkımda Yazısını Ekle</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </form>
+    </div>
 </div>

@@ -1,21 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DtoLayer.AboutDto;
-using SignalR.DtoLayer.BookingDto;
 using SignalR.EntityLayer.Entities;
 
 namespace SignalRApi.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class AboutController : ControllerBase
     {
         private readonly IAboutService _aboutService;
-
         public AboutController(IAboutService aboutService)
         {
             _aboutService = aboutService;
@@ -34,7 +29,7 @@ namespace SignalRApi.Controllers
             {
                 Title = createAboutDto.Title,
                 Description = createAboutDto.Description,
-                ImageURL = createAboutDto.ImageURL
+                ImageUrl = createAboutDto.ImageUrl
             };
             _aboutService.TAdd(about);
             return Ok("Hakkımda Kısmı Başarılı Bir Şekilde Eklendi");
@@ -42,9 +37,9 @@ namespace SignalRApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteAbout(int id)
         {
-            var values = _aboutService.TGetByID(id);
-            _aboutService.TDelete(values);
-            return Ok("Hakkımda Kısmı Silindi");
+            var value = _aboutService.TGetByID(id);
+            _aboutService.TDelete(value);
+            return Ok("Hakkımda Alanı Silindi");
         }
         [HttpPut]
         public IActionResult UpdateAbout(UpdateAboutDto updateAboutDto)
@@ -52,9 +47,9 @@ namespace SignalRApi.Controllers
             About about = new About()
             {
                 AboutID = updateAboutDto.AboutID,
-                Title = updateAboutDto.Title,
+                ImageUrl = updateAboutDto.ImageUrl,
                 Description = updateAboutDto.Description,
-                ImageURL = updateAboutDto.ImageURL
+                Title = updateAboutDto.Title
             };
             _aboutService.TUpdate(about);
             return Ok("Hakkımda Alanı Güncellendi");
@@ -62,8 +57,8 @@ namespace SignalRApi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetAbout(int id)
         {
-            var values = _aboutService.TGetByID(id);
-            return Ok(values);
+            var value = _aboutService.TGetByID(id);
+            return Ok(value);
         }
     }
 }

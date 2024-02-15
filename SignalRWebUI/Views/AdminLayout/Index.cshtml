@@ -1,25 +1,25 @@
+﻿
 @{
     Layout = null;
 }
+
 <!DOCTYPE html>
 <html>
-@await Component.InvokeAsync("_LayoutHeaderComponent")
-
+@await Component.InvokeAsync("_LayoutHeaderPartialComponent")
 <body>
-    <div class="wrapper">
-        @await Component.InvokeAsync("_LayoutNavbarComponent")
-        @await Component.InvokeAsync("_LayoutSideBarComponent")
-        <div class="main-panel">
-            <div class="content">
-                <div class="container-fluid">
-                    @RenderBody()
-                </div>
-            </div>
-            @await Component.InvokeAsync("_LayoutFooterComponent")
-        </div>
-    </div>
-</body>
-@await Component.InvokeAsync("_LayoutScriptComponent")
-@await RenderSectionAsync("Scripts", required: false)
+	<div class="wrapper">
+		@await Component.InvokeAsync("_LayoutNavbarComponentPartial")
 
+		@await Component.InvokeAsync("_LayoutSidebarComponentPartial")
+	
+		
+		<div class="main-panel">
+
+			@RenderBody()
+
+			@await Component.InvokeAsync("_LayoutFooterComponentPartial")
+		</div>
+	</div>
+	@await Component.InvokeAsync("_LayoutScriptComponentPartial")
+</body>
 </html>

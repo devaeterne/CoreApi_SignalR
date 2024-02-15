@@ -1,13 +1,18 @@
-﻿<Properties StartupConfiguration="{866CEEEE-AED3-4569-8202-0881035A6692}|https">
+﻿<Properties StartupConfiguration="{866CEEEE-AED3-4569-8202-0881035A6692}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SignalR.EntityLayer/Entities/AppRole.cs">
+    <Files>
+      <File FileName="SignalR.EntityLayer/Entities/AppRole.cs" Line="14" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CoreApi_SignalR">
-            <Node name="SignalRWebUI" selected="True" />
+          <Node name="CoreApi_SignalR" expanded="True">
+            <Node name="SignalR.DataAccessLayer" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

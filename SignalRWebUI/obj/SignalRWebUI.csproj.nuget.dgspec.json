@@ -4,14 +4,14 @@
     "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj": {}
   },
   "projects": {
-    "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj": {
+    "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/SignalR.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj",
-        "projectName": "SignalRWebUI",
-        "projectPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj",
+        "projectUniqueName": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/SignalR.EntityLayer.csproj",
+        "projectName": "SignalR.EntityLayer",
+        "projectPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/SignalR.EntityLayer.csproj",
         "packagesPath": "/Users/devaeterne/.nuget/packages/",
-        "outputPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/",
+        "outputPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/devaeterne/.nuget/NuGet/NuGet.Config"
@@ -38,9 +38,100 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj",
+        "projectName": "SignalRWebUI",
+        "projectPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/SignalRWebUI.csproj",
+        "packagesPath": "/Users/devaeterne/.nuget/packages/",
+        "outputPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/devaeterne/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/SignalR.EntityLayer.csproj": {
+                "projectPath": "/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/SignalR.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
             }
           },
           "imports": [

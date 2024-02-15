@@ -21,3 +21,4 @@
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/obj/Debug/net8.0/refint/SignalR.EntityLayer.dll
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.pdb
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/obj/Debug/net8.0/ref/SignalR.EntityLayer.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalR.EntityLayer/obj/Debug/net8.0/SignalR.EntityLayer.csproj.AssemblyReference.cache

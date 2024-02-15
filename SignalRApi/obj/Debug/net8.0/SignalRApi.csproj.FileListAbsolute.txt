@@ -145,3 +145,9 @@
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/SignalR.DtoLayer.dll
 /Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/SignalR.DtoLayer.pdb
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/devaeterne/Projects/CoreApi_SignalR/SignalRApi/bin/Debug/net8.0/Microsoft.Extensions.Options.dll

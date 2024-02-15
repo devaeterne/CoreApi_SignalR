@@ -1,24 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DataAccessLayer.Concrete;
+using SignalR.DtoLayer.FeatureDto;
 using SignalR.DtoLayer.ProductDto;
 using SignalR.EntityLayer.Entities;
 
 namespace SignalRApi.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
         private readonly IMapper _mapper;
-
         public ProductController(IProductService productService, IMapper mapper)
         {
             _productService = productService;
@@ -28,10 +25,70 @@ namespace SignalRApi.Controllers
         [HttpGet]
         public IActionResult ProductList()
         {
-            var values = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
-            return Ok(values);
+            var value = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
+            return Ok(value);
         }
-        //Ürünlerin Kategori ilişkileri ile getirilmesi için açılmış listeleme
+
+        [HttpGet("ProductCount")]
+        public IActionResult ProductCount()
+        {
+            return Ok(_productService.TProductCount());
+        }
+
+        [HttpGet("TotalPriceByDrinkCategory")]
+        public IActionResult TotalPriceByDrinkCategory()
+        {
+            return Ok(_productService.TTotalPriceByDrinkCategory());
+        }
+
+        [HttpGet("TotalPriceBySaladCategory")]
+        public IActionResult TotalPriceBySaladCategory()
+        {
+            return Ok(_productService.TTotalPriceBySaladCategory());
+        }
+
+        [HttpGet("ProductNameByMaxPrice")]
+        public IActionResult ProductNameByMaxPrice()
+        {
+            return Ok(_productService.TProductNameByMaxPrice());
+        }
+
+        [HttpGet("ProductNameByMinPrice")]
+        public IActionResult ProductNameByMinPrice()
+        {
+            return Ok(_productService.TProductNameByMinPrice());
+        }
+
+        [HttpGet("ProductAvgPriceByHamburger")]
+        public IActionResult ProductAvgPriceByHamburger()
+        {
+            return Ok(_productService.TProductAvgPriceByHamburger());
+        }
+
+        [HttpGet("ProductCountByHamburger")]
+        public IActionResult ProductCountByHamburger()
+        {
+            return Ok(_productService.TProductCountByCategoryNameHamburger());
+        }
+
+        [HttpGet("ProductCountByDrink")]
+        public IActionResult ProductCountByDrink()
+        {
+            return Ok(_productService.TProductCountByCategoryNameDrink());
+        }
+
+        [HttpGet("ProductPriceAvg")]
+        public IActionResult ProductPriceAvg()
+        {
+            return Ok(_productService.TProductPriceAvg());
+        }
+
+        [HttpGet("ProductPriceBySteakBurger")]
+        public IActionResult ProductPriceBySteakBurger()
+        {
+            return Ok(_productService.TProductPriceBySteakBurger());
+        }
+
         [HttpGet("ProductListWithCategory")]
         public IActionResult ProductListWithCategory()
         {
@@ -39,7 +96,7 @@ namespace SignalRApi.Controllers
             var values = context.Products.Include(x => x.Category).Select(y => new ResultProductWithCategory
             {
                 Description = y.Description,
-                ImageURL = y.ImageURL,
+                ImageUrl = y.ImageUrl,
                 Price = y.Price,
                 ProductID = y.ProductID,
                 ProductName = y.ProductName,
@@ -54,47 +111,42 @@ namespace SignalRApi.Controllers
         {
             _productService.TAdd(new Product()
             {
-                ProductName = createProductDto.ProductName,
                 Description = createProductDto.Description,
+                ImageUrl = createProductDto.ImageUrl,
                 Price = createProductDto.Price,
-                ImageURL = createProductDto.ImageURL,
-                CategoryID = createProductDto.CategoryID,
-                ProductStatus = true,
+                ProductName = createProductDto.ProductName,
+                ProductStatus = createProductDto.ProductStatus,
+                CategoryID = createProductDto.CategoryID
             });
-            return Ok("Ürün Eklendi");
+            return Ok("Ürün Bilgisi Eklendi");
         }
         [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
-            var values = _productService.TGetByID(id);
-            _productService.TDelete(values);
+            var value = _productService.TGetByID(id);
+            _productService.TDelete(value);
             return Ok("Ürün Bilgisi Silindi");
         }
         [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
-            var values = _productService.TGetByID(id);
-            return Ok(values);
-        }
-        [HttpGet("ProductCount")]
-        public IActionResult ProductCount()
-        {
-            return Ok(_productService.TProductCount());
+            var value = _productService.TGetByID(id);
+            return Ok(value);
         }
         [HttpPut]
         public IActionResult UpdateProduct(UpdateProductDto updateProductDto)
         {
             _productService.TUpdate(new Product()
             {
-                ProductID = updateProductDto.ProductID,
-                ProductName = updateProductDto.ProductName,
                 Description = updateProductDto.Description,
+                ImageUrl = updateProductDto.ImageUrl,
                 Price = updateProductDto.Price,
-                ImageURL = updateProductDto.ImageURL,
+                ProductName = updateProductDto.ProductName,
                 ProductStatus = updateProductDto.ProductStatus,
+                ProductID = updateProductDto.ProductID,
                 CategoryID = updateProductDto.CategoryID
             });
-            return Ok("Ürün Bilgileri Güncelledi");
+            return Ok("Ürün Bilgisi Güncellendi");
         }
     }
 }
