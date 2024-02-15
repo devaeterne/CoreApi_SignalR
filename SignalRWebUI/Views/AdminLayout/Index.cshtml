@@ -20,5 +20,6 @@
     </div>
 </body>
 @await Component.InvokeAsync("_LayoutScriptComponent")
+@await RenderSectionAsync("Scripts", required: false)
 
 </html>

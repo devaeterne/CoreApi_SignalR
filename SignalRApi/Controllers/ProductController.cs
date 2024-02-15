@@ -76,6 +76,11 @@ namespace SignalRApi.Controllers
             var values = _productService.TGetByID(id);
             return Ok(values);
         }
+        [HttpGet("ProductCount")]
+        public IActionResult ProductCount()
+        {
+            return Ok(_productService.TProductCount());
+        }
         [HttpPut]
         public IActionResult UpdateProduct(UpdateProductDto updateProductDto)
         {

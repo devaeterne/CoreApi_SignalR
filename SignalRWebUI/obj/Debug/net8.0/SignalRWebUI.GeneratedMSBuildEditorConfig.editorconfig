@@ -150,6 +150,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2lnbmFsUkRlZmF1bHQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/SignalRDefault/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2lnbmFsUkRlZmF1bHQvSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/SocialMedia/CreateSocialMedia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29jaWFsTWVkaWEvQ3JlYXRlU29jaWFsTWVkaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -160,6 +164,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/SocialMedia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29jaWFsTWVkaWEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Statistic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGlzdGljL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/devaeterne/Projects/CoreApi_SignalR/SignalRWebUI/Views/Testimonial/CreateTestimonial.cshtml]

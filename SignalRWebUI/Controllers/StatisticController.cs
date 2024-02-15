@@ -8,20 +8,16 @@ using Microsoft.Extensions.Logging;
 
 namespace SignalRWebUI.Controllers
 {
-    public class SignalRDefaultController : Controller
+    public class StatisticController : Controller
     {
-        private readonly ILogger<SignalRDefaultController> _logger;
+        private readonly ILogger<StatisticController> _logger;
 
-        public SignalRDefaultController(ILogger<SignalRDefaultController> logger)
+        public StatisticController(ILogger<StatisticController> logger)
         {
             _logger = logger;
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-        public IActionResult Index2()
         {
             return View();
         }

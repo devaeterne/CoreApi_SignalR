@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Index2";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 <h1>Index</h1>
@@ -15,7 +15,9 @@
                 <div class="col-md-12">
                     <div class="card">
                         <script type="text/javascript">
+
                             $(document).ready(() => {
+
                                 var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:5293/SignalRHub").build();
                                 //Bağlantı Test Satırı
                                 $("#connstatus").text(connection.state);
@@ -23,7 +25,10 @@
                                 //Bağlantı dizesi
                                 connection.start().then(() => {
                                     $("#connstatus").text(connection.state);
-                                    connection.invoke("SendCategoryCount");
+                                    setInterval(() => {
+                                        connection.invoke("SendCategoryCount");
+                                    }, 1000)
+
                                 }).catch((err) => { console.log(err) });
 
 
@@ -31,6 +36,7 @@
                                     $('#categorycount').text(value);
                                 });
                             });
+
                         </script>
                     </div>
                 </div>
