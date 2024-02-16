@@ -9,7 +9,7 @@ namespace SignalR.DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=192.168.15.200;database=SignalRProject;Persist Security Info=True;User ID=safak;Password=848533As;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("connectionString");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Booking> Bookings { get; set; }
