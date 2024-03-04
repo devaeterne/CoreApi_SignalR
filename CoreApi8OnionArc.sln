@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FB71A5E1-4471-46B0-B591-9F2EC7FB0F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApi8OnionArc.Domain", "CoreApi8OnionArc.Domain\CoreApi8OnionArc.Domain.csproj", "{E4BE0B77-9F68-40B0-BEB8-B07CEBEAA78C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4BE0B77-9F68-40B0-BEB8-B07CEBEAA78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BE0B77-9F68-40B0-BEB8-B07CEBEAA78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4BE0B77-9F68-40B0-BEB8-B07CEBEAA78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BE0B77-9F68-40B0-BEB8-B07CEBEAA78C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38488463-8726-4D3E-A326-F5B785C37F71}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4BE0B77-9F68-40B0-BEB8-B07CEBEAA78C} = {FB71A5E1-4471-46B0-B591-9F2EC7FB0F82}
+	EndGlobalSection
+EndGlobal
